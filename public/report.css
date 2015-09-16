@@ -1,0 +1,275 @@
+* {
+    font-family: sans-serif;
+    font-size: 8.5pt;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+@page {
+    margin-top: 0.70in;
+    margin-left: 0.35in;
+    margin-right: 0.35in;
+    margin-bottom: 0.70in;
+    
+    size: letter portrait;
+
+    @bottom-center{
+        content: element(footerIdentifier)
+    }
+
+    @top-center{
+        content: element(headerIdentifier)
+    }
+
+    counter-increment: page 1
+}
+
+.page-number:before {
+    content: "Page " counter(page); 
+}
+
+.header-page-number {
+    width: 26px;
+    height: 26px;
+    background-image: url("page_number.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 2.6px;
+    background-size: 19px;
+    background-position: 4px -1px;
+    text-align: center;
+    line-height: 19px;
+}
+
+.header-page-number:after {
+    content: "1";
+    color: white;
+    z-index: 2;
+}
+
+span.propertyid {
+    width: 100%;
+    text-align:right;
+    display: block;
+    font-weight: bold;
+}
+
+body {
+    width: 7.75in;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 8.5pt;
+    border-bottom: solid 0.7pt gray;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 8.5pt;
+}
+
+.data-column {
+    line-height: 13pt;
+}
+
+.onecol {
+    width: 2.20in;
+    display: inline-block;
+}
+
+.lastsale-onecol {
+    width: 2.5in;
+    display: block;
+    float: left;
+}
+
+.twocol {
+    display: inline-block;
+    width: 4.78in;
+}
+
+.lastsale-twocol {
+    float: left;
+    display: block;
+    width: 4.78in;
+}
+
+div.datapoint {
+    display: block;
+}
+
+div.datapoint>label {
+    color: grey;
+    width: 71pt;
+    display: inline-block;
+    vertical-align: top;
+}
+
+span.value {
+    display: inline-block;
+}
+
+div.onecol span.value {
+    width: 81pt;
+}
+
+div.twocol span.value {
+    width: 3.75in;
+}
+
+.datapoint {
+    border-bottom: solid 1px lightgrey;
+}
+
+.image-column {
+    float: left;
+    margin-right: 16pt;
+}
+
+.image-column>img {
+    margin-top:14pt;
+    margin-bottom: 16pt;
+    width: 2.60in;
+    display: block;
+}
+
+div.title {
+    border-bottom: 1pt solid black;
+    font-size: 11pt;
+    font-weight: bolder;
+}
+
+header {
+    position: running(headerIdentifier);
+    margin-top: 0.4in;
+}
+
+.header-container {
+    position: relative;
+    border-bottom: solid 1pt black;
+}
+
+.header-container img.page_number {
+    height: 18pt;
+    right: -1pt;
+    top: 4pt;
+    z-index: 2;
+    position: absolute;
+}
+
+.top-banner {
+    position: relative;
+    height: 28pt;
+    margin-top: 15px;
+}
+
+img.energy_labels {
+    height: 34.1pt;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: span;
+}
+
+div.banner {
+    /* line-height: 2pt; */
+}
+
+table>thead>tr>td {
+    background-color: lightgray;
+    font-size: 7pt;
+    font-weight: bold;
+    height: 0.18in;
+}
+
+td.description {
+    color: gray;
+    border-bottom: 1px solid;
+}
+
+table.mkt_conditions {
+    width: 3.62in;
+    float: left;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+table.mkt_conditions td {
+    border: 1pt solid lightgray;
+    line-height:14pt;
+}
+
+td.mkt_conditions_first_col {
+    width: 1.95in;
+}
+
+
+td.mkt_conditions_second_col {
+    width: 0.83in;
+}
+
+
+td.mkt_conditions_third_col {
+    width: 0.83in;
+}
+
+div.spacer {
+    width:23pt;
+    display:inline-block;
+}
+
+div.float-spacer {
+    width:23pt;
+    float: left;
+}
+
+.customer-logo {
+    width: 1.38in;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.costar-logo {
+    width: 0.86in;
+    position: absolute;
+    right: 65pt;  
+    top: 6pt; 
+}
+
+.license-notice {
+    margin-left: auto;
+    margin-right: auto;
+    width: 310pt;
+    font-size: 7pt;
+    line-height: 36pt;
+}
+
+.date-and-page {
+    position: absolute;
+    right: 8pt;
+    top: 0;
+    line-height: 13pt;
+}
+
+footer {
+    position: running(footerIdentifier);
+}
+
+.footer-container {
+    border-top: solid black 1pt;
+    position: relative;
+}
+
