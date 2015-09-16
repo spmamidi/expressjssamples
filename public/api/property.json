@@ -1,14 +1,14 @@
 {
-	"property" : {
-			"title" : "PROPERTY",
-			"type" : "4 Star Office - Delivers Jun 2014",
-			"rba" : "260,779 SF",
-			"stories" : 11,
-			"typicalFloor" : "23,623 SF",
-			"coreFactor" : "12.4%",
-			"landArea" : "11",
-			"yearBuilt" : "1990",
-			"yearRemoved" : "Mar 2012",
-			"Class" : "A"
-		}
+  "property": {
+    "title": "PROPERTY",
+    "type": "4 Star Office - Delivers Jun 2014",
+    "rba": "260,779 SF",
+    "stories": 11,
+    "typicalFloor": "23,623 SF",
+    "coreFactor": "12.4%",
+    "landArea": "11",
+    "yearBuilt": "1990",
+    "yearRemoved": "Mar 2012",
+    "Class": "A"
+  }
 }

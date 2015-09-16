@@ -13,22 +13,21 @@ p, h1, h2, h3 {
     margin-left: 0.35in;
     margin-right: 0.35in;
     margin-bottom: 0.70in;
-    
     size: letter portrait;
 
-    @bottom-center{
-        content: element(footerIdentifier)
+    @bottom-center {
+        content: element(footerIdentifier);
     }
 
-    @top-center{
-        content: element(headerIdentifier)
+    @top-center {
+        content: element(headerIdentifier);
     }
 
-    counter-increment: page 1
+    counter-increment: page 1;
 }
 
 .page-number:before {
-    content: "Page " counter(page); 
+    content: "Page " counter(page);
 }
 
 .header-page-number {
@@ -46,23 +45,23 @@ p, h1, h2, h3 {
     line-height: 19px;
 }
 
-.header-page-number:after {
-    content: "1";
-    color: white;
-    z-index: 2;
-}
+    .header-page-number:after {
+        content: "1";
+        color: white;
+        z-index: 2;
+    }
 
 span.propertyid {
     width: 100%;
-    text-align:right;
+    text-align: right;
     display: block;
     font-weight: bold;
 }
 
 body {
     width: 7.75in;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -110,12 +109,12 @@ div.datapoint {
     display: block;
 }
 
-div.datapoint>label {
-    color: grey;
-    width: 71pt;
-    display: inline-block;
-    vertical-align: top;
-}
+    div.datapoint > label {
+        color: grey;
+        width: 71pt;
+        display: inline-block;
+        vertical-align: top;
+    }
 
 span.value {
     display: inline-block;
@@ -138,12 +137,12 @@ div.twocol span.value {
     margin-right: 16pt;
 }
 
-.image-column>img {
-    margin-top:14pt;
-    margin-bottom: 16pt;
-    width: 2.60in;
-    display: block;
-}
+    .image-column > img {
+        margin-top: 14pt;
+        margin-bottom: 16pt;
+        width: 2.60in;
+        display: block;
+    }
 
 div.title {
     border-bottom: 1pt solid black;
@@ -161,13 +160,13 @@ header {
     border-bottom: solid 1pt black;
 }
 
-.header-container img.page_number {
-    height: 18pt;
-    right: -1pt;
-    top: 4pt;
-    z-index: 2;
-    position: absolute;
-}
+    .header-container img.page_number {
+        height: 18pt;
+        right: -1pt;
+        top: 4pt;
+        z-index: 2;
+        position: absolute;
+    }
 
 .top-banner {
     position: relative;
@@ -187,7 +186,7 @@ div.banner {
     /* line-height: 2pt; */
 }
 
-table>thead>tr>td {
+table > thead > tr > td {
     background-color: lightgray;
     font-size: 7pt;
     font-weight: bold;
@@ -206,10 +205,10 @@ table.mkt_conditions {
     margin-bottom: 8px;
 }
 
-table.mkt_conditions td {
-    border: 1pt solid lightgray;
-    line-height:14pt;
-}
+    table.mkt_conditions td {
+        border: 1pt solid lightgray;
+        line-height: 14pt;
+    }
 
 td.mkt_conditions_first_col {
     width: 1.95in;
@@ -226,12 +225,12 @@ td.mkt_conditions_third_col {
 }
 
 div.spacer {
-    width:23pt;
-    display:inline-block;
+    width: 23pt;
+    display: inline-block;
 }
 
 div.float-spacer {
-    width:23pt;
+    width: 23pt;
     float: left;
 }
 
@@ -245,8 +244,8 @@ div.float-spacer {
 .costar-logo {
     width: 0.86in;
     position: absolute;
-    right: 65pt;  
-    top: 6pt; 
+    right: 65pt;
+    top: 6pt;
 }
 
 .license-notice {
@@ -272,4 +271,3 @@ footer {
     border-top: solid black 1pt;
     position: relative;
 }
-

@@ -1,34 +1,33 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Sample Report</title>
-     <link rel="stylesheet" href="public/report.css">
+    <link rel="stylesheet" href="public/report.css">
 </head>
 <body>
- {{> common/footer}}
- {{> common/header}}
+    {{> common/footer}}
+    {{> common/header}}
 
-  <div class="top-banner">
-    <img class="energy_labels" src="public/energy_labels.png" />
-    <div class="banner">
-      <h1>{{header.address.line1}}</h1>
-      <p>{{header.address.line2}}</p>
+    <div class="top-banner">
+        <img class="energy_labels" src="public/energy_labels.png" />
+        <div class="banner">
+            <h1>{{header.address.line1}}</h1>
+            <p>{{header.address.line2}}</p>
+        </div>
     </div>
-  </div>
-<div style="clear: both">&nbsp;</div>
-
-   {{> ic/imagealley}}
-   
-   <div class="data-column"> {{> ic/property}} </div>
-  <div class="data-column">{{> ic/contacts}}</div>
-  <div style="clear: both">&nbsp;</div>
-  <div class="data-column">{{> ic/availablespaces}}</div>
-  <div >{{> ic/propertyNotes}}</div>
-    <div >{{> ic/marketconditions}}</div>
     <div style="clear: both">&nbsp;</div>
-    <div >{{> ic/salenotes}}</div>
-  
+
+    {{> ic/imagealley}}
+
+    <div class="data-column"> {{> ic/property}} </div>
+    <div class="data-column">{{> ic/contacts}}</div>
+    <div style="clear: both">&nbsp;</div>
+    <div class="data-column">{{> ic/availablespaces}}</div>
+    <div>{{> ic/propertyNotes}}</div>
+    <div>{{> ic/marketconditions}}</div>
+    <div style="clear: both">&nbsp;</div>
+    <div>{{> ic/salenotes}}</div>
+
 </body>
 </html>
-      
