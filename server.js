@@ -17,7 +17,18 @@ app.get('/about', function(req, res){
 
 app.get('/samplereport', function(req, res){
 	
-	res.render('samplereport', {layout : false, 
+	res.render('samplereport', getServiceData());
+});
+
+
+app.use('/public', express.static('public'));
+
+var port = Number(process.env.port || 5000);
+app.listen(port);
+
+function getServiceData(){
+	var sampleData = {
+		layout : false, 
 		header :{
 			'address' :{
 				line1 : '607 14th St NW - The Westory',
@@ -74,12 +85,7 @@ app.get('/samplereport', function(req, res){
 			title : 'SALE NOTES',
 			description: 'This transaction represents the sale of the The Westory at 607 14th St NW in Washington, DC. This 260,779 square-foot office property sold for $159,359,500 on July 17, 2012. The listing broker and buyer were able to confirm the sale price and other details of the transaction.      <br><br>      The property was about 91 percent occupied at the time of sale and traded at a 5.5 percent cap rate.'					
 		}
+	};
+	return sampleData;
 	
-	});
-});
-
-
-app.use('/public', express.static('public'));
-
-var port = Number(process.env.port || 5000);
-app.listen(port);
+}
